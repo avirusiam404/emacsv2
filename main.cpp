@@ -28,7 +28,7 @@ void execute(const string& line) {
     string cmd;
     ss >> cmd;
 
-    if (cmd == "сосал????нет") {
+    if (cmd == "ебанат") {
         string name, eq, value;
         ss >> name >> eq;
         getline(ss, value);
@@ -47,6 +47,8 @@ void execute(const string& line) {
         } else if (holds_alternative<string>(result)) {
             cout << get<string>(result) << endl;
         }
+    } else if (cmd == "emacs") {
+        cout << "iuseemacsbtw" << endl;
     } else {
         cout << "Ты долбаеб?" << endl;
     }
